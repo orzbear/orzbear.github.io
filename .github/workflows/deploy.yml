@@ -1,8 +1,16 @@
 name: Deploy to GitHub Pages
 
 on:
+  # Run on pushes to main
   push:
     branches: [ main ]
+  
+  # Also run on pull requests targeting the main branch
+  pull_request:
+    branches: [ main ]
+    types: [opened, synchronize, reopened] # These are common types for CI
+
+  # Keep manual trigger
   workflow_dispatch:
 
 permissions:
@@ -46,5 +54,77 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
+        id: deploymentname: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  # ADD THIS BLOCK to trigger on pull requests
+  pull_request:
+    branches: [ main ]
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+
+# ADD pull-requests: write PERMISSION
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  pull-requests: write # <-- Allows action to comment on PRs with preview link
+
+concurrency:
+  # Group by PR number for PRs, and by 'pages' for main branch pushes
+  group: ${{ github.event_name == 'pull_request' && format('pages-pr-{0}', github.event.number) || 'pages' }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  # This is your ORIGINAL deploy job, now made CONDITIONAL
+  deploy:
+    # ADD THIS IF CONDITION to only run on push to main
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
         id: deployment
+        uses: actions/deploy-pages@v4
+
+  # ADD THIS NEW JOB for pull request previews
+  deploy-preview:
+    # ADD THIS IF CONDITION to only run on pull requests
+    if: github.event_name == 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages (Preview)
+        id: deployment-preview
+        uses: actions/deploy-pages@v4
+        # This action automatically creates a preview environment
+        # and comments on the PR with the URL.
         uses: actions/deploy-pages@v4

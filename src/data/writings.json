@@ -1,6 +1,6 @@
 [
   {
-    "id": "rag-eval",
+    "id": "smeantic-rag",
     "title": "Evaluating RAG Systems Beyond Accuracy",
     "date": "2025-09-10",
     "summary": "A practical framework for coverage, faithfulness, and robustness in retrieval-augmented generation.",
@@ -30,12 +30,12 @@
     "link": "#"
   },
   {
-    "id": "digital-governance",
-    "title": "Digital Governance for AI",
-    "date": "2025-08-14",
-    "summary": "A lightweight model for capability thresholds, audits, and disclosure.",
+    "id": "takaichi-tech-sovereignty-cross-strait",
+    "title": "Takaichi Sanae’s Push for Technological Sovereignty is Reshaping Cross-Strait Power",
+    "date": "2025-11-07",
+    "summary": "An analysis of how Prime Minister Sanae Takaichi’s shift toward crisis-management investment and technological sovereignty is redefining Japan’s regional strategy and altering the structural balance across the Taiwan Strait.",
     "category": "policy-writing",
-    "tags": ["AI Policy"],
+    "tags": ["Japan", "Taiwan", "China", "Technology Policy", "Digital Sovereignty", "Indo-Pacific"],
     "readTime": "6 min",
     "link": "#"
   },

@@ -44,7 +44,7 @@ export default function About() {
         <ul className="list-disc pl-5 text-gray-700 mb-6">
           <li>M.C.S., University of Sydney – Computer Science</li>
           <li>M.A., Georgetown University – Political Science</li>
-          <li>B.A., National Taiwan University – Political Science</li>
+          <li>B.A., National Chengchi University – Political Science</li>
         </ul>
 
         <h2 className="text-2xl font-semibold mb-2 text-gray-800">Other Major Experiences</h2>

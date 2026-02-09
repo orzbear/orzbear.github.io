@@ -1,76 +1,85 @@
 [
   {
-    "slug": "smart-fit",
-    "title": "Smart-Fit",
-    "summary": "Health & fitness planner with analytics and habit tracking. Health & fitness planner with analytics and habit tracking. Health & fitness planner with analytics and habit tracking. Health & fitness planner with analytics and habit tracking.",
-    "stack": ["React", "Node", "Postgres"],
+    "slug": "campmate",
+    "title": "CampMate",
+    "summary": "A full-stack camping and outdoor trip planner featuring intelligent packing checklist generation based on real-time weather forecasts, interactive campsite exploration with Leaflet maps, and secure JWT-based authentication. Built with a monorepo architecture and automated AWS ECS Fargate deployment.",
+    "stack": ["React", "Node.js", "MongoDB", "TypeScript", "AWS", "Terraform"],
     "year": 2025,
     "type": "Full-Stack",
     "featured": true,
     "featuredRank": 1,
+    "image": "/images/projects/campmate.png",
+    "links": { 
+      "demo": "https://bearmate.link", 
+      "github": "https://github.com/orzbear/camp_with_bear", 
+      "case": "/projects/campmate" 
+    }
+  },
+  {
+    "slug": "smart-fit",
+    "title": "Smart-Fit",
+    "summary": "An AI-integrated fitness application featuring personalized health insights powered by OpenAI's GPT-4. Includes a data-driven visualization suite built with Chart.js for tracking workout progress and a responsive dashboard for comprehensive health management.",
+    "stack": ["React", "Vite", "OpenAI API", "Chart.js", "Tailwind CSS", "Docker"],
+    "year": 2025,
+    "type": "AI & Full-Stack",
+    "featured": true,
+    "featuredRank": 1,
     "image": "/images/projects/smart-fit.png",
-    "links": { "demo": "#", "github": "#", "case": "/projects/smart-fit" }
+    "links": { 
+      "demo": "#", 
+      "github": "https://github.com/orzbear/smart-fit", 
+      "case": "/projects/smart-fit" 
+    }
   },
   {
-    "slug": "nlp-insights",
-    "title": "NLP Insights",
-    "summary": "Topic modeling + RAG for policy documents.",
-    "stack": ["Python", "FastAPI", "LangChain"],
-    "year": 2024,
-    "type": "AI/ML",
-    "featured": true,
-    "featuredRank": 2,
-    "metrics": ["~120ms top-k", "F1 +8%"],
-    "image": "/images/projects/nlp-insights.png",
-    "links": { "demo": "#", "github": "#", "case": "/projects/nlp-insights" }
-  },
+      "slug": "semantic-code-architecture",
+      "title": "Semantic Code Architecture",
+      "summary": "A context-aware coding agent utilizing Retrieval-Augmented Generation (RAG) and Model Context Protocol (MCP) to analyze and debug complex software architectures. Developed as a capstone project to improve semantic understanding of code structures.",
+      "stack": ["Python", "MCP", "RAG", "LLMs"],
+      "year": 2025,
+      "type": "AI & Systems",
+      "featured": true,
+      "featuredRank": 2,
+      "image": "/images/projects/semantic-code.png",
+      "links": { 
+        "demo": "#", 
+        "github": "https://github.com/orzbear/Debugger-MCP", 
+        "case": "/projects/semantic-code-architecture" 
+      }
+    },
   {
-    "slug": "nlp-insights2",
-    "title": "Hansford Parliamentary Data sets",
-    "summary": "Topic modeling + RAG for policy documents.",
-    "stack": ["Python", "FastAPI", "LangChain"],
-    "year": 2024,
-    "type": "AI/ML",
-    "featured": true,
-    "featuredRank": 2,
-    "metrics": ["~120ms top-k", "F1 +8%"],
-    "image": "/images/projects/nlp-insights.png",
-    "links": { "demo": "#", "github": "#", "case": "/projects/nlp-insights" }
-  },
-  {
-    "slug": "debugger-mcp",
-    "title": "Debugger MCP",
-    "summary": "DAP MVP with debugpy + MCP host.",
-    "stack": ["TypeScript", "Python"],
+    "slug": "lingobear",
+    "title": "LingoBear",
+    "summary": "An AI-powered audio processing application that transcribes recorded voice into text and provides seamless multi-language translation. It leverages Hugging Face Transformers, specifically the Whisper model for speech-to-text and MarianMT for translation, all running within a fast, lightweight React interface.",
+    "stack": ["React", "Vite", "Transformers.js", "Tailwind CSS", "Whisper", "MarianMT"],
     "year": 2025,
-    "type": "Tools",
-    "featured": false,
-    "image": "/images/projects/debugger.png",
-    "links": { "github": "#", "case": "/projects/debugger-mcp" }
+    "type": "AI & Frontend",
+    "featured": true,
+    "featuredRank": 3,
+    "image": "/images/projects/lingobear.png",
+    "links": { 
+      "demo": "#", 
+      "github": "https://github.com/orzbear/LingoBear---transcribe-and-translate", 
+      "case": "/projects/lingobear" 
+    }
   },
   {
-    "slug": "viz-lab",
-    "title": "Viz Lab",
-    "summary": "Explorable data viz components (charts, maps).",
-    "stack": ["D3", "React"],
-    "year": 2023,
-    "type": "Frontend",
-    "featured": false,
-    "image": "/images/projects/viz-lab.png",
-    "links": { "demo": "#", "github": "#", "case": "/projects/viz-lab" }
-  },
-    {
-    "slug": "debugger-mcp",
-    "title": "Debugger MCP",
-    "summary": "DAP MVP with debugpy + MCP host.",
-    "stack": ["TypeScript", "Python"],
+    "slug": "immigration-framing-analysis",
+    "title": "Information-Theoretic Analysis of Parliamentary Debates",
+    "summary": "A computational social science research project quantifying polarization in Australian parliamentary immigration debates (2010-2025). Utilized Mutual Information and Information Theory metrics to analyze framing dynamics and identify political agenda-setters.",
+    "stack": ["Python", "Java (JIDT)", "Information Theory", "Data Analysis"],
     "year": 2025,
-    "type": "Tools",
-    "featured": false,
-    "image": "/images/projects/debugger.png",
-    "links": { "github": "#", "case": "/projects/debugger-mcp" }
+    "type": "Data Science & Research",
+    "featured": true,
+    "featuredRank": 4,
+    "image": "/images/projects/parliament-analysis.png",
+    "links": { 
+      "demo": "#", 
+      "github": "#", 
+      "case": "/projects/immigration-framing-analysis" 
+    }
   },
-    {
+  {
     "slug": "debugger-mcp",
     "title": "Debugger MCP",
     "summary": "DAP MVP with debugpy + MCP host.",
@@ -81,6 +90,5 @@
     "image": "/images/projects/debugger.png",
     "links": { "github": "#", "case": "/projects/debugger-mcp" }
   }
-  
 ]
 

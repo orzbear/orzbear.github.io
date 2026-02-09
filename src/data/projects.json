@@ -8,7 +8,6 @@
     "type": "Full-Stack",
     "featured": true,
     "featuredRank": 1,
-    "image": "/images/projects/campmate.png",
     "links": { 
       "demo": "https://bearmate.link", 
       "github": "https://github.com/orzbear/camp_with_bear", 
@@ -24,7 +23,6 @@
     "type": "AI & Full-Stack",
     "featured": true,
     "featuredRank": 1,
-    "image": "/images/projects/smart-fit.png",
     "links": { 
       "demo": "#", 
       "github": "https://github.com/orzbear/smart-fit", 
@@ -40,7 +38,6 @@
       "type": "AI & Systems",
       "featured": true,
       "featuredRank": 2,
-      "image": "/images/projects/semantic-code.png",
       "links": { 
         "demo": "#", 
         "github": "https://github.com/orzbear/Debugger-MCP", 
@@ -56,7 +53,6 @@
     "type": "AI & Frontend",
     "featured": true,
     "featuredRank": 3,
-    "image": "/images/projects/lingobear.png",
     "links": { 
       "demo": "#", 
       "github": "https://github.com/orzbear/LingoBear---transcribe-and-translate", 
@@ -72,7 +68,6 @@
     "type": "Data Science & Research",
     "featured": true,
     "featuredRank": 4,
-    "image": "/images/projects/parliament-analysis.png",
     "links": { 
       "demo": "#", 
       "github": "#", 
@@ -87,7 +82,6 @@
     "year": 2025,
     "type": "Tools",
     "featured": false,
-    "image": "/images/projects/debugger.png",
     "links": { "github": "#", "case": "/projects/debugger-mcp" }
   }
 ]

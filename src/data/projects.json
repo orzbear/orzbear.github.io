@@ -10,8 +10,7 @@
     "featuredRank": 1,
     "links": { 
       "demo": "https://bearmate.link", 
-      "github": "https://github.com/orzbear/camp_with_bear", 
-      "case": "/projects/campmate" 
+      "github": "https://github.com/orzbear/camp_with_bear"
     }
   },
   {
@@ -25,8 +24,7 @@
     "featuredRank": 1,
     "links": { 
       "demo": "#", 
-      "github": "https://github.com/orzbear/smart-fit", 
-      "case": "/projects/smart-fit" 
+      "github": "https://github.com/orzbear/smart-fit"
     }
   },
   {
@@ -40,8 +38,7 @@
     "featuredRank": 3,
     "links": { 
       "demo": "#", 
-      "github": "https://github.com/orzbear/LingoBear---transcribe-and-translate", 
-      "case": "/projects/lingobear" 
+      "github": "https://github.com/orzbear/LingoBear---transcribe-and-translate"
     }
   },
   {
@@ -55,8 +52,7 @@
       "featuredRank": 2,
       "links": { 
         "demo": "#", 
-        "github": "https://github.com/orzbear/Debugger-MCP", 
-        "case": "/projects/semantic-code-architecture" 
+        "github": "https://github.com/orzbear/Debugger-MCP"
       }
     },
   
@@ -71,8 +67,7 @@
     "featuredRank": 4,
     "links": { 
       "demo": "#", 
-      "github": "#", 
-      "case": "/projects/immigration-framing-analysis" 
+      "github": "#"
     }
   },
   {

@@ -8,7 +8,6 @@
     "type": "Full-Stack",
     "featured": true,
     "featuredRank": 1,
-    "image":"/images/campmate.png",
     "links": { 
       "demo": "https://bearmate.link", 
       "github": "https://github.com/orzbear/camp_with_bear", 

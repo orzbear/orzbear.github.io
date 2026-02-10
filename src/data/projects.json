@@ -8,6 +8,7 @@
     "type": "Full-Stack",
     "featured": true,
     "featuredRank": 1,
+    "image":"/images/campmate.png",
     "links": { 
       "demo": "https://bearmate.link", 
       "github": "https://github.com/orzbear/camp_with_bear", 
@@ -30,21 +31,6 @@
     }
   },
   {
-      "slug": "semantic-code-architecture",
-      "title": "Semantic Code Architecture",
-      "summary": "A context-aware coding agent utilizing Retrieval-Augmented Generation (RAG) and Model Context Protocol (MCP) to analyze and debug complex software architectures. Developed as a capstone project to improve semantic understanding of code structures.",
-      "stack": ["Python", "MCP", "RAG", "LLMs"],
-      "year": 2025,
-      "type": "AI & Systems",
-      "featured": true,
-      "featuredRank": 2,
-      "links": { 
-        "demo": "#", 
-        "github": "https://github.com/orzbear/Debugger-MCP", 
-        "case": "/projects/semantic-code-architecture" 
-      }
-    },
-  {
     "slug": "lingobear",
     "title": "LingoBear",
     "summary": "An AI-powered audio processing application that transcribes recorded voice into text and provides seamless multi-language translation. It leverages Hugging Face Transformers, specifically the Whisper model for speech-to-text and MarianMT for translation, all running within a fast, lightweight React interface.",
@@ -59,6 +45,22 @@
       "case": "/projects/lingobear" 
     }
   },
+  {
+      "slug": "semantic-code-architecture",
+      "title": "Semantic Code Architecture",
+      "summary": "A context-aware coding agent utilizing Retrieval-Augmented Generation (RAG) and Model Context Protocol (MCP) to analyze and debug complex software architectures. Developed as a capstone project to improve semantic understanding of code structures.",
+      "stack": ["Python", "MCP", "RAG", "LLMs"],
+      "year": 2025,
+      "type": "AI & Systems",
+      "featured": true,
+      "featuredRank": 2,
+      "links": { 
+        "demo": "#", 
+        "github": "https://github.com/orzbear/Debugger-MCP", 
+        "case": "/projects/semantic-code-architecture" 
+      }
+    },
+  
   {
     "slug": "immigration-framing-analysis",
     "title": "Information-Theoretic Analysis of Parliamentary Debates",

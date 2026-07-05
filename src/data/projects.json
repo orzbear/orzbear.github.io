@@ -4,12 +4,17 @@
     "title": "CampMate",
     "summary": "A full-stack camping and outdoor trip planner featuring intelligent packing checklist generation based on real-time weather forecasts, interactive campsite exploration with Leaflet maps, and secure JWT-based authentication. Built with a monorepo architecture and automated AWS ECS Fargate deployment.",
     "stack": ["React", "Node.js", "MongoDB", "TypeScript", "AWS", "Terraform"],
-    "year": 2025,
+    "year": 2026,
     "type": "Full-Stack",
     "featured": true,
     "featuredRank": 1,
-    "links": { 
-      "demo": "https://bearmate.link", 
+    "images": [
+      "/images/campmate-1.png",
+      "/images/campmate-2.png",
+      "/images/campmate-3.png"
+    ],
+    "links": {
+      "demo": "https://bearmate.link",
       "github": "https://github.com/orzbear/camp_with_bear"
     }
   },
@@ -21,53 +26,79 @@
     "year": 2025,
     "type": "AI & Full-Stack",
     "featured": true,
-    "featuredRank": 1,
-    "links": { 
-      "demo": "#", 
+    "featuredRank": 2,
+    "images": [
+      "/images/smart-fit-1.png",
+      "/images/smart-fit-2.png",
+      "/images/smart-fit-3.png"
+    ],
+    "links": {
+      "demo": "#",
       "github": "https://github.com/orzbear/smart-fit"
     }
   },
   {
     "slug": "lingobear",
+    "image": "/images/lingobear.png",
     "title": "LingoBear",
     "summary": "An AI-powered audio processing application that transcribes recorded voice into text and provides seamless multi-language translation. It leverages Hugging Face Transformers, specifically the Whisper model for speech-to-text and MarianMT for translation, all running within a fast, lightweight React interface.",
     "stack": ["React", "Vite", "Transformers.js", "Tailwind CSS", "Whisper", "MarianMT"],
     "year": 2025,
     "type": "AI & Frontend",
-    "featured": true,
-    "featuredRank": 3,
-    "links": { 
-      "demo": "#", 
+    "featured": false,
+    "links": {
+      "demo": "#",
       "github": "https://github.com/orzbear/LingoBear---transcribe-and-translate"
     }
   },
   {
-      "slug": "semantic-code-architecture",
-      "title": "Semantic Code Architecture",
-      "summary": "A context-aware coding agent utilizing Retrieval-Augmented Generation (RAG) and Model Context Protocol (MCP) to analyze and debug complex software architectures. Developed as a capstone project to improve semantic understanding of code structures.",
-      "stack": ["Python", "MCP", "RAG", "LLMs"],
-      "year": 2025,
-      "type": "AI & Systems",
-      "featured": true,
-      "featuredRank": 2,
-      "links": { 
-        "demo": "#", 
-        "github": "https://github.com/orzbear/Debugger-MCP"
-      }
-    },
-  
+    "slug": "semantic-code-architecture",
+    "images": [
+      "/images/semantic-1.png",
+      "/images/semantic-2.png"
+    ],
+    "title": "Semantic Code Architecture",
+    "summary": "A context-aware coding agent utilizing Retrieval-Augmented Generation (RAG) and Model Context Protocol (MCP) to analyze and debug complex software architectures. Developed as a capstone project to improve semantic understanding of code structures.",
+    "stack": ["Python", "MCP", "RAG", "LLMs"],
+    "year": 2025,
+    "type": "AI & Systems",
+    "featured": true,
+    "featuredRank": 3,
+    "links": {
+      "demo": "#",
+      "github": "https://github.com/orzbear/Debugger-MCP"
+    }
+  },
   {
     "slug": "immigration-framing-analysis",
+    "images": [
+      "/images/parliament-1.png",
+      "/images/parliament-2.png",
+      "/images/parliament-3.png"
+    ],
     "title": "Information-Theoretic Analysis of Parliamentary Debates",
     "summary": "A computational social science research project quantifying polarization in Australian parliamentary immigration debates (2010-2025). Utilized Mutual Information and Information Theory metrics to analyze framing dynamics and identify political agenda-setters.",
     "stack": ["Python", "Java (JIDT)", "Information Theory", "Data Analysis"],
     "year": 2025,
     "type": "Data Science & Research",
+    "featured": false,
+    "links": {
+      "demo": "#",
+      "github": "#"
+    }
+  },
+  {
+    "slug": "au-macro-report",
+    "image": "/images/au-macro-report.png",
+    "title": "Australia Macro Immigrants Report 2026",
+    "summary": "An interactive macroeconomic reporting platform and sandbox analyzing Net Overseas Migration (NOM) flows and GDP impacts. Engineered high-performance data visualizations with React and Vercel, providing real-time simulations for policy analysis and digital storytelling.",
+    "stack": ["React", "Vercel", "Data Visualization", "Policy Analysis"],
+    "year": 2026,
+    "type": "Data Science & Policy",
     "featured": true,
     "featuredRank": 4,
-    "links": { 
-      "demo": "#", 
-      "github": "#"
+    "links": {
+      "demo": "https://au-macro-immigrants-report-2026.vercel.app/"
     }
   },
   {
@@ -78,7 +109,6 @@
     "year": 2025,
     "type": "Tools",
     "featured": false,
-    "links": { "github": "#", "case": "/projects/debugger-mcp" }
+    "links": { "github": "#" }
   }
 ]
-

@@ -1,58 +1,45 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: ["class"],
-    content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  darkMode: "class",
   theme: {
-  	extend: {
-  		colors: {
-  			ink: '#0F172A',
-  			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
-  				foreground: 'hsl(var(--accent-foreground))'
-  			},
-  			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
-  			card: {
-  				DEFAULT: 'hsl(var(--card))',
-  				foreground: 'hsl(var(--card-foreground))'
-  			},
-  			popover: {
-  				DEFAULT: 'hsl(var(--popover))',
-  				foreground: 'hsl(var(--popover-foreground))'
-  			},
-  			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
-  			},
-  			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))'
-  			},
-  			muted: {
-  				DEFAULT: 'hsl(var(--muted))',
-  				foreground: 'hsl(var(--muted-foreground))'
-  			},
-  			destructive: {
-  				DEFAULT: 'hsl(var(--destructive))',
-  				foreground: 'hsl(var(--destructive-foreground))'
-  			},
-  			border: 'hsl(var(--border))',
-  			input: 'hsl(var(--input))',
-  			ring: 'hsl(var(--ring))',
-  			chart: {
-  				'1': 'hsl(var(--chart-1))',
-  				'2': 'hsl(var(--chart-2))',
-  				'3': 'hsl(var(--chart-3))',
-  				'4': 'hsl(var(--chart-4))',
-  				'5': 'hsl(var(--chart-5))'
-  			}
-  		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
-  	}
+    extend: {
+      fontFamily: {
+        degular: ["'DM Sans'", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "'Segoe UI'", "Roboto", "sans-serif"],
+        blanco: ["'Source Serif 4'", "ui-serif", "Georgia", "'Times New Roman'", "serif"],
+      },
+      // Colors reference CSS variables so dark mode token swaps propagate automatically
+      colors: {
+        vellum:       "var(--color-vellum)",
+        "ink-black":  "var(--color-ink-black)",
+        graphite:     "var(--color-graphite)",
+        charcoal:     "var(--color-charcoal)",
+        stone:        "var(--color-stone)",
+        pebble:       "var(--color-pebble)",
+        ash:          "var(--color-ash)",
+        slate:        "var(--color-slate)",
+        "pressed-ink":"var(--color-pressed-ink)",
+        midnight:     "var(--color-midnight)",
+      },
+      fontSize: {
+        caption:      ["14px", { lineHeight: "1.5", letterSpacing: "0.1px" }],
+        body:         ["16px", { lineHeight: "1.5" }],
+        "body-lg":    ["18px", { lineHeight: "1.5" }],
+        subheading:   ["20px", { lineHeight: "1.4" }],
+        "heading-sm": ["22px", { lineHeight: "1.4" }],
+        heading:      ["28px", { lineHeight: "1.4" }],
+        "heading-lg": ["32px", { lineHeight: "1.25", letterSpacing: "0.025px" }],
+        display:      ["40px", { lineHeight: "1.25", letterSpacing: "0.025px" }],
+      },
+      borderRadius: {
+        sm:      "3px",
+        DEFAULT: "3px",
+        lg:      "8px",
+      },
+      maxWidth: {
+        reading: "720px",
+      },
+    },
   },
-  plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate")]
+  plugins: [require("@tailwindcss/typography")],
 }

@@ -1,59 +1,154 @@
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"
+"use client";
+
+const education = [
+  { period: "2023–2025", title: "M.C.S., Computer Science", place: "University of Sydney" },
+  { period: "2019–2021", title: "M.A., Political Science", place: "Georgetown University" },
+  { period: "2013–2017", title: "B.A., Political Science", place: "National Chengchi University" },
+];
+
+const experience = [
+  {
+    period: "2024–Present",
+    title: "Software Engineer",
+    description:
+      "Full-stack projects with React, Node.js, and Docker. Building intelligent systems and data-driven products that connect technology with real human needs.",
+  },
+  {
+    period: "2024–Present",
+    title: "Data Science & AI Research",
+    description:
+      "NLP, ML model development, and visualization. Applied research in retrieval-augmented generation, probabilistic forecasting, and computational social science.",
+  },
+  {
+    period: "2024",
+    title: "Volunteer Developer, Vets for Compassion",
+    description:
+      "Wildlife rescue application development and civic technology projects at the intersection of AI and public interest.",
+  },
+];
 
 export default function About() {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      
-      {/* Left column – Photo + Socials */}
-      <div className="flex flex-col items-center">
-        <img
-          src={`${import.meta.env.BASE_URL}images/profile.jpg`}
-          alt="Cho-Han Hsiung portrait"
-          className="rounded-2xl w-90 h-75 object-cover shadow-lg mb-6"
-        />
-
-        <div className="flex space-x-6 text-2xl text-gray-600">
-          <a href="https://linkedin.com/in/YOURUSERNAME" target="_blank" rel="noreferrer" className="hover:text-blue-600">
-            <FaLinkedin />
-          </a>
-          <a href="https://github.com/YOURUSERNAME" target="_blank" rel="noreferrer" className="hover:text-black">
-            <FaGithub />
-          </a>
-          <a href="https://instagram.com/YOURUSERNAME" target="_blank" rel="noreferrer" className="hover:text-pink-500">
-            <FaInstagram />
-          </a>
+    <div className="py-20 max-w-[760px] mx-auto">
+      {/* Hero: image + intro */}
+      <section className="flex flex-col lg:flex-row items-start gap-10 lg:gap-14 mb-16">
+        <div className="w-full lg:w-[40%] shrink-0">
+          <img
+            src="/images/profile.jpg"
+            alt="Cho-Han Hsiung portrait"
+            className="w-full object-cover"
+            style={{ borderRadius: "3px" }}
+          />
         </div>
-      </div>
 
-      {/* Right column – Bio, Education, Experience */}
-      <div>
-        <h1 className="text-4xl font-bold mb-4 text-gray-900">About Me</h1>
-        <p className="text-gray-700 mb-8 leading-relaxed">
-          I’m Cho-Han Hsiung — a software engineer with a background bridging computer science, AI, and political science.  
-          I enjoy creating intelligent systems and data-driven products that connect technology with real human needs.
-        </p>
+        <div className="w-full lg:w-[60%]">
+          <h1
+            className="font-blanco text-charcoal font-normal"
+            style={{ fontSize: "40px", lineHeight: 1.25 }}
+          >
+            About
+          </h1>
 
-        <h2 className="text-2xl font-semibold mb-2 text-gray-800">Major Experience</h2>
-        <ul className="list-disc pl-5 text-gray-700 mb-6">
-          <li>Software Engineer – Full Stack projects with React, Node.js, and Docker</li>
-          <li>Data Science & AI projects: NLP, ML model development, and visualization</li>
-          <li>Research in technology policy and digital governance</li>
-        </ul>
+          <p
+            className="text-graphite mt-6"
+            style={{ fontSize: "18px", lineHeight: 1.5, marginBottom: "27px" }}
+          >
+            I'm Cho-Han Hsiung — a software engineer with a background bridging
+            computer science, AI, and political science. I enjoy creating
+            intelligent systems and data-driven products that connect technology
+            with real human needs.
+          </p>
 
-        <h2 className="text-2xl font-semibold mb-2 text-gray-800">Education</h2>
-        <ul className="list-disc pl-5 text-gray-700 mb-6">
-          <li>M.C.S., University of Sydney – Computer Science</li>
-          <li>M.A., Georgetown University – Political Science</li>
-          <li>B.A., National Chengchi University – Political Science</li>
-        </ul>
+          <p
+            className="text-graphite"
+            style={{ fontSize: "18px", lineHeight: 1.5, marginBottom: "27px" }}
+          >
+            My work spans full-stack engineering, applied machine learning, and
+            computational social science research. I'm drawn to problems where
+            technical rigour meets public relevance.
+          </p>
+        </div>
+      </section>
 
-        <h2 className="text-2xl font-semibold mb-2 text-gray-800">Other Major Experiences</h2>
-        <ul className="list-disc pl-5 text-gray-700">
-          <li>Volunteer developer at Vets for Compassion (wildlife rescue app)</li>
-          <li>Founder of several AI-assisted civic technology projects</li>
-          <li>Passionate about generative design, data ethics, and interdisciplinary innovation</li>
-        </ul>
-      </div>
-    </section>
-  )
+      {/* Experience */}
+      <section>
+        <h2
+          className="font-blanco text-charcoal font-normal"
+          style={{ fontSize: "28px", lineHeight: 1.4, marginBottom: "40px" }}
+        >
+          Experience
+        </h2>
+        <div>
+          {experience.map((e) => (
+            <div
+              key={e.title}
+              className="flex gap-6 border-b border-ash"
+              style={{ padding: "32px 0" }}
+            >
+              <span
+                className="text-stone shrink-0"
+                style={{ fontSize: "14px", width: "80px", paddingTop: "4px" }}
+              >
+                {e.period}
+              </span>
+              <div>
+                <h3
+                  className="font-blanco text-charcoal font-normal"
+                  style={{ fontSize: "22px", lineHeight: 1.4 }}
+                >
+                  {e.title}
+                </h3>
+                <p
+                  className="text-graphite mt-2 max-w-reading"
+                  style={{ fontSize: "16px", lineHeight: 1.5 }}
+                >
+                  {e.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Education */}
+      <section className="mt-16">
+        <h2
+          className="font-blanco text-charcoal font-normal"
+          style={{ fontSize: "28px", lineHeight: 1.4, marginBottom: "40px" }}
+        >
+          Education
+        </h2>
+        <div>
+          {education.map((e) => (
+            <div
+              key={e.title}
+              className="flex gap-6 border-b border-ash"
+              style={{ padding: "32px 0" }}
+            >
+              <span
+                className="text-stone shrink-0"
+                style={{ fontSize: "14px", width: "80px", paddingTop: "4px" }}
+              >
+                {e.period}
+              </span>
+              <div>
+                <h3
+                  className="font-blanco text-charcoal font-normal"
+                  style={{ fontSize: "22px", lineHeight: 1.4 }}
+                >
+                  {e.title}
+                </h3>
+                <p
+                  className="text-graphite mt-1"
+                  style={{ fontSize: "16px", lineHeight: 1.5 }}
+                >
+                  {e.place}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
 }

@@ -1,13 +1,23 @@
 [
   {
-    "id": "smeantic-rag",
-    "title": "Evaluating RAG Systems Beyond Accuracy",
-    "date": "2025-09-10",
-    "summary": "A practical framework for coverage, faithfulness, and robustness in retrieval-augmented generation.",
-    "category": "ai-data",
-    "tags": ["RAG", "Evaluation"],
+    "id": "taiwan-intelligence-recruitment",
+    "title": "Taiwan's Intelligence Recruitment Faces a Domestic Security Dilemma",
+    "date": "2026-07-02",
+    "summary": "Taiwan's new online intelligence portal invites mainland Chinese citizens to spy for Taipei — but without refugee law or asylum protections, it exposes informants to prosecution and leaves 260,000 mainland spouses caught in a domestic security paradox.",
+    "category": "policy-writing",
+    "publication": "Pacific Forum",
+    "tags": ["Taiwan", "Intelligence", "Cross-Strait", "Asylum", "Security Policy"],
     "readTime": "7 min",
-    "link": "#"
+    "link": "https://pacforum.org/publications/the-pilot-42-taiwans-intelligence-recruitment-faces-a-domestic-security-dilemma/"
+  },
+  {
+    "id": "semantic-code-architecture",
+    "title": "Semantic Understanding of Code Structure for Context-Aware Coding Agents",
+    "date": "2025-11-07",
+    "summary": "Investigates how combining AST-based retrieval, hybrid vector search, and a DAP-backed Debugger MCP enables AI coding agents to reason over real software architecture rather than isolated code snippets.",
+    "category": "ai-data",
+    "tags": ["RAG", "MCP", "LLM", "Debugging", "Code Intelligence"],
+    "readTime": "12 min"
   },
   {
     "id": "time-series",
@@ -30,11 +40,57 @@
     "link": "#"
   },
   {
+    "id": "uyghur-nationalism-xinjiang-policy",
+    "title": "The Development of Uyghur Ethnic Nationalism and the Chinese State's Response: A Policy Analysis",
+    "date": "2019-11-12",
+    "summary": "Traces the iterative failure of Beijing's Xinjiang policies — from economic inducement to securitized repression — and how each transition deepened the cycle of ethnic grievance and nationalist mobilization among Uyghurs.",
+    "category": "policy-writing",
+    "publication": "Democracy & Society",
+    "tags": ["Uyghur", "Xinjiang", "China", "Ethnic Nationalism", "Policy Analysis"],
+    "readTime": "18 min",
+    "link": "https://democracyandsociety.net/2019/11/12/now-available-ds-volume-16-borders-migration-and-the-nation/"
+  },
+  {
+    "id": "jensen-huang-trump-china",
+    "title": "Jensen Huang Joined Trump's China Visit — Not Nvidia's 'Wish'",
+    "date": "2026-05-19",
+    "summary": "Jensen Huang's last-minute addition to Trump's China delegation was not Nvidia's own doing — he was a pawn in the Trump–Xi bilateral bargain, and the AI chip deadlock never became the main course of the summit.",
+    "category": "policy-writing",
+    "publication": "上報 Up Media",
+    "lang": "zh",
+    "tags": ["Nvidia", "Trump", "U.S.–China Relations", "AI Policy", "Semiconductors"],
+    "readTime": "6 min",
+    "link": "https://www.upmedia.mg/tw/commentary/world-affairs/259014"
+  },
+  {
+    "id": "taiwan-defence-deadlock",
+    "title": "Taiwan's Defence Deadlock is Weakening Deterrence",
+    "date": "2026-06-25",
+    "summary": "Taiwan's legislature passed a heavily reduced NT$780 billion defence budget, replacing long-term strategic investment with fragmented parliamentary oversight — a deterrence deficit Beijing is well positioned to exploit.",
+    "category": "policy-writing",
+    "publication": "East Asia Forum",
+    "tags": ["Taiwan", "Defense Policy", "KMT", "Legislature", "Deterrence"],
+    "readTime": "6 min",
+    "link": "https://eastasiaforum.org/2026/06/25/taiwans-defence-deadlock-is-weakening-deterrence/"
+  },
+  {
+    "id": "taiwan-unreliable-washington",
+    "title": "The Problem With Betting Taiwan's Future on an Unreliable Washington",
+    "date": "2026-06-06",
+    "summary": "Taiwan's dependence on U.S. military support has become a strategic vulnerability as Washington's commitment grows increasingly transactional. The case for diversifying security partnerships across the Indo-Pacific.",
+    "category": "policy-writing",
+    "publication": "International Policy Digest",
+    "tags": ["Taiwan", "U.S.–Taiwan Relations", "Indo-Pacific", "Defense Policy"],
+    "readTime": "8 min",
+    "link": "https://intpolicydigest.org/the-problem-with-betting-taiwan-s-future-on-an-unreliable-washington/"
+  },
+  {
     "id": "takaichi-tech-sovereignty-cross-strait",
     "title": "Takaichi Sanae’s Push for Technological Sovereignty is Reshaping Cross-Strait Power",
     "date": "2025-11-07",
     "summary": "An analysis of how Prime Minister Sanae Takaichi’s shift toward crisis-management investment and technological sovereignty is redefining Japan’s regional strategy and altering the structural balance across the Taiwan Strait.",
     "category": "policy-writing",
+    "publication": "Dialogue China Forum",
     "tags": ["Japan", "Taiwan", "China", "Technology Policy", "Digital Sovereignty", "Indo-Pacific"],
     "readTime": "6 min",
     "link": "#"

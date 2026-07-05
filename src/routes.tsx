@@ -5,6 +5,7 @@ import About from "./pages/About"
 import Projects from "./pages/Projects"
 import ProjectDetail from "./pages/ProjectDetail"
 import Research from "./pages/Research"
+import Writing from "./pages/Writing"
 import WritingDetail from "./pages/WritingDetail"
 
 export const routes: RouteObject[] = [
@@ -17,6 +18,7 @@ export const routes: RouteObject[] = [
       { path: "projects", element: <Projects /> },
       { path: "projects/:slug", element: <ProjectDetail /> },
       { path: "research", element: <Research /> },
+      { path: "writing", element: <Writing /> },
       { path: "writings/:id", element: <WritingDetail /> },
     ]
   }

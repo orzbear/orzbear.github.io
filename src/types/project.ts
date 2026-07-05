@@ -9,6 +9,7 @@ export interface Project {
   featuredRank?: number;
   metrics?: string[];
   image?: string;
+  images?: string[];
   links?: {
     demo?: string;
     github?: string;

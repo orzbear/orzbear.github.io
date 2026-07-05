@@ -8,5 +8,7 @@ export interface Writing {
   category: WritingCategory;
   tags?: string[];
   readTime?: string;       
-  link?: string;           
+  link?: string;
+  publication?: string;
+  lang?: string;
 }
